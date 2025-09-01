@@ -11,11 +11,12 @@ Apply a price for the total square footage.
 int main()
 {
     // Declaring all variables needed
-    int win_height;
+    int win_height ;
     int win_width;
     int win_num;
     int sqft_ea;
     int sqft_tot;
+    int price_tot;
 
     // Collecting values needed for each variable
 
@@ -28,5 +29,15 @@ int main()
     printf("Enter the total number of windows:  ");
     scanf("%d", &win_num);
 
-    printf("%d, %d, %d", win_width, win_height, win_num);
+   // printf("%d, %d, %d", win_width, win_height, win_num);
+
+    // Performing all operations on variables
+
+   sqft_ea = win_height * win_width;
+   sqft_tot = sqft_ea * win_num;
+   price_tot = sqft_tot * 50;
+
+    // Printing all required information
+
+    printf("\nYour total is: $%d for %d square feet of window.\n", price_tot, sqft_tot);
 }
