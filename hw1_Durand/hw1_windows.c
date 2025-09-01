@@ -40,4 +40,7 @@ int main()
     // Printing all required information
 
     printf("\nYour total is: $%d for %d square feet of window.\n", price_tot, sqft_tot);
+
+    return 0;
+    
 }
